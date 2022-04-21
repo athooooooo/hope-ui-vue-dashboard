@@ -2,6 +2,8 @@
     <loader />
     <div class="wrapper">
         <router-view/>
+        <div class="btn-download">
+      </div>
     </div>
 </template>
 <script>
