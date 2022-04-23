@@ -12,7 +12,7 @@
         <SubHeader :statesubNavbarStyle="stateNavbarStyle"/>
         <!--Nav End-->
       </div>
-      <!-- <div class="conatiner-fluid content-inner mt-n5 py-0">
+      <div class="conatiner-fluid content-inner mt-n5 py-0">
        <router-view/>
        <div class="btn-download">
           <a class="btn btn-success" href="https://iqonic.design/product/admin-templates/hope-ui-open-source-vue-js-admin-template/" target="_blank" >
@@ -23,7 +23,7 @@
               <span>Download</span>
           </a>
       </div>
-      </div> -->
+      </div>
       <Footer />
     </main>
     <a class="btn btn-fixed-end btn-warning btn-icon btn-setting" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" role="button" aria-controls="offcanvasExample" @click="mobileOffcanvas">
