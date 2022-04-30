@@ -33,6 +33,7 @@
       </svg>
     </a>
     <SettingOffcanvas :showoffcanvas='onshowoffcanvas' @closeoffcanvas="onCloseOffcanvas" />
+    <router-view/>
     <!-- Wrapper End-->
 </template>
 <script>

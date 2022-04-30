@@ -310,7 +310,7 @@ const routes = [
     children: horizontalchildRoutes('horizontal')
   },
   {
-    path: '/auth',
+    path: '/signin',
     name: 'auth',
     component: () => import('../layouts/simple'),
     children: authchildRoutes('auth')

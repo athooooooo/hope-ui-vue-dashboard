@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="login-content">
-      <div class="row m-0 align-items-center bg-white vh-100">
+      <div class="row m-0 align-items-center bg- vh-100">
         <div class="col-md-6">
           <div class="row justify-content-center">
             <div class="col-md-10">
@@ -112,6 +112,7 @@ export default {
     return {
       postBody: '',
       errors: []
+
     }
   },
 
