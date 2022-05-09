@@ -1,7 +1,7 @@
 <template>
   <div>
     <section class="login-content">
-      <div class="row m-0 align-items-center bg- vh-100">
+      <div class="row m-0 align-items-center bg-white vh-100">
         <div class="col-md-6">
           <div class="row justify-content-center">
             <div class="col-md-10">
@@ -22,7 +22,7 @@
                   </router-link>
                   <h2 class="mb-2 text-center">Sign In</h2>
                   <p class="text-center">Stay Connect and Happy Working.</p>
-                  <!-- <form @submit="login()"> -->
+                  <form @submit="login()"></form>
 
                   <div class="row">
                     <div class="col-lg-12">
@@ -119,21 +119,20 @@ export default {
   methods: {
     // Pushes posts to the server when called.
     async login () {
+      const formData = new FormData()
+      formData.append('email', 'info@jualbareng.com')
+      formData.append('password', 'infojb123')
       try {
-        const formData = new FormData()
-        formData.append('email', 'info@jualbareng.com')
-        formData.append('password', 'infojb123')
         await axios
-          .post('https://api-staging.jualbareng.com/admin/login', {
-            body: { FormData },
+          .post('https://api-staging.jualbareng.com/admin/login', formData, {
             headers: {
-              'Content-Type': 'multipart/form-data',
-              'Access-Control-Allow-Origin': '*'
+              'Content-Type': 'multipart/form-data'
             }
           })
           .then((response) => console.log(response))
       } catch (e) {
         this.errors.push(e)
+        console.log('error gagal hits api')
       }
     }
   }
